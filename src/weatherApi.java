@@ -28,7 +28,7 @@ public class weatherApi {
         try{
             //HttpResponse response=httpClient.execute(httpGet);
             HttpPost request = new HttpPost("https://api.openai.com/v1/completions");
-            request.setHeader(HttpHeaders.AUTHORIZATION, "Bearer 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");
+            request.setHeader(HttpHeaders.AUTHORIZATION, "Bearer YOUR_API_KEY");
             request.setHeader(HttpHeaders.CONTENT_TYPE, "application/json");
 
             JSONObject data = new JSONObject();
